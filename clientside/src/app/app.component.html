@@ -1,0 +1,32 @@
+
+   <app-header></app-header>
+  <app-navbar> </app-navbar>
+  <!-- Display the below items except login and regisret routes
+  <div *ngIf="!_router.url.includes(['login','register'])">
+      <app-banner></app-banner>
+      <app-container></app-container>
+      <app-products></app-products>
+  </div>
+  <div *ngIf="!_router.url.includes(['/single'])">
+    <app-banner></app-banner>
+    <app-container></app-container>
+    <app-products></app-products>
+    <app-login></app-login>
+    <app-register></app-register>
+</div>-->
+ <!-- <flash-messages></flash-messages> -->
+  <!-- <app-banner></app-banner>
+ <app-container></app-container> -->
+ <!-- <div ngIf="isfromproduct==true"></div>
+    <app-products></app-products>
+ </div> -->
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+  <app-footer></app-footer>
+
+

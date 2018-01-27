@@ -1,0 +1,70 @@
+	<!-- registration-form -->
+  <div class="registration-form">
+    <div class="container">
+    <div class="dreamcrub">
+              <ul class="breadcrumbs">
+                      <li class="home">
+                         <a href="index.html" title="Go to Home Page">Home</a>&nbsp;
+                         <span>&gt;</span>
+                      </li>
+                      <li class="women">
+                         Registration
+                      </li>
+                  </ul>
+                  <ul class="previous">
+                    <li><a href="index.html">Back to Previous Page</a></li>
+                  </ul>
+                  <div class="clearfix"></div>
+           </div>
+      <h2>Registration</h2>
+      <div class="registration-grids">
+        <div class="reg-form">
+          <div class="reg">
+             <p>Welcome, please enter the following details to continue.</p>
+             <p>If you have previously registered with us,<a [routerLink]="['/login']">click here</a></p>
+             <form (submit)="onRegisterSubmit()">
+               <ul>
+                 <li class="text-info"> Name: </li>
+                 <li><input type="text" [(ngModel)]="name"  name="name" value=""></li>
+               </ul>
+               <ul>
+                 <li class="text-info">User Name: </li>
+                 <li><input type="text" [(ngModel)]="username" name="username" value=""></li>
+               </ul>
+              <ul>
+                 <li class="text-info">Email: </li>
+                 <li><input type="text"  [(ngModel)]="email" name="email" value=""></li>
+               </ul>
+               <ul>
+                 <li class="text-info">Password: </li>
+                 <li><input type="password" [(ngModel)]="password" name="password" value=""></li>
+               </ul>
+               <!-- <ul>
+                 <li class="text-info">Re-enter Password:</li>
+                 <li><input type="password" value=""></li>
+               </ul> -->
+               <ul>
+                 <li class="text-info">Mobile Number:</li>
+                 <li><input type="text" [(ngModel)]="mobile" name="mobile" value=""></li>
+               </ul>
+               <input type="submit" value="REGISTER NOW">
+               <p class="click">By clicking this button, you are agree to my  <a href="#">Policy Terms and Conditions.</a></p>
+             </form>
+           </div>
+        </div>
+        <div class="reg-right">
+           <h3>Social login</h3>
+            <ul class="list-inline">
+              <li class="list-item-inline"><a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
+              <li class="list-item-inline"> <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
+              <li class="list-item-inline"> <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a></li>
+              <li class="list-item-inline"> <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a></li>
+
+            </ul>
+
+            </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <!-- registration-form -->

@@ -1,0 +1,60 @@
+	<!-- content-section-starts -->
+	<div class="content">
+    <div class="container">
+      <div class="login-page">
+            <div class="dreamcrub">
+              <ul class="breadcrumbs">
+                      <li class="home">
+                         <a href="index.html" title="Go to Home Page">Home</a>&nbsp;
+                         <span>&gt;</span>
+                      </li>
+                      <li class="women">
+                         Login
+                      </li>
+                  </ul>
+                  <ul class="previous">
+                    <li><a href="index.html">Back to Previous Page</a></li>
+                  </ul>
+                  <div class="clearfix"></div>
+           </div>
+           <div class="account_grid">
+           <div class="col-md-6 login-left wow fadeInLeft" data-wow-delay="0.4s">
+             <h2>NEW CUSTOMERS</h2>
+           <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+           <a class="acount-btn" [routerLink]="['/register']">Create an Account</a>
+           <!-- Social Login -->
+           <div class="">
+             <br/>
+            <h3>Social login</h3>
+             <ul class="list-inline">
+               <li class="list-item-inline"><a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
+               <li class="list-item-inline"> <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
+               <li class="list-item-inline"> <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a></li>
+               <li class="list-item-inline"> <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a></li>
+             </ul>
+             </div>
+
+
+           </div>
+           <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">
+            <h3>REGISTERED CUSTOMERS</h3>
+          <p>If you have an account with us, please log in.</p>
+          <form (submit)="onLoginSubmit()">
+            <div>
+            <span>Username<label>*</label></span>
+            <input type="text" [(ngModel)]="username" name="username">
+            </div>
+            <div>
+            <span>Password<label>*</label></span>
+            <input type="password" [(ngModel)]="password" name="password">
+            </div>
+            <a class="forgot" href="#">Forgot Your Password?</a>
+            <input type="submit" value="Login">
+            </form>
+           </div>
+           <div class="clearfix"> </div>
+         </div>
+         </div>
+  </div>
+
+

@@ -1,0 +1,33 @@
+<!-- header-section-starts -->
+<div class="header">
+  <div class="header-top-strip">
+    <div class="container">
+      <div class="header-top-left">
+        <ul>
+          <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
+            <a [routerLink]="['/login']" ><span class="glyphicon glyphicon-user"> </span>Login</a>
+          </li>
+          <li  *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
+            <a [routerLink]="['/register']" ><span class="glyphicon glyphicon-lock"> </span>Create an Account</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-right">
+          <div class="cart box_1">
+            <a [routerLink]="['/Cart']">
+              <h3> <span class="simpleCart_total"> $0.00 </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>)<img src="../../assets/images/bag.png" alt=""></h3>
+            </a>
+            <p><a [routerLink]="['/Cart']" class="simpleCart_empty">Empty cart</a></p>
+            <!-- <a (click)="onLogoutClick()"href="#" ><span class="glyphicon glyphicon-log-out"></span>Logout </a> -->
+            <div class="clearfix"> </div>
+            <!-- <li *ngIf="authService.loggedIn()"><a (click)="onLogoutClick()" href="#">Logout</a></li> -->
+          </div>
+      </div>
+      <div class="clearfix">
+         </div>
+    </div>
+  </div>
+</div>
+<!-- header-section-ends -->
+
+
